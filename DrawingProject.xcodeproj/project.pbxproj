@@ -73,6 +73,7 @@
 		E5308B8F218B737500C449FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E5308B7C218B732B00C449FF /* AppDelegate.swift */,
 				E5308B83218B732C00C449FF /* Assets.xcassets */,
 				E5308B88218B732C00C449FF /* Info.plist */,
 			);
@@ -82,7 +83,6 @@
 		E5308B90218B738100C449FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5308B7C218B732B00C449FF /* AppDelegate.swift */,
 				E5308B7E218B732B00C449FF /* ArtViewController.swift */,
 			);
 			path = Controller;
