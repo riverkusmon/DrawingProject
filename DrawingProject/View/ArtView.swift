@@ -8,9 +8,16 @@
 
 import UIKit
 
-public class ArtView: UIView -> Void
+public class ArtView: UIView
 {
 
+    public override func draw(_ rect: CGRect) -> Void
+    {
+        //drawing code
+        createStickFigure().stroke()
+        //drawTurtle()
+    }
+    
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
@@ -32,6 +39,8 @@ public class ArtView: UIView -> Void
         figure.addLine(to: CGPoint(x: 180, y: 300))
         figure.move(to: CGPoint(x: 200, y: 270))
         figure.addLine(to: CGPoint(x: 220, y: 300))
+        
+        return figure
     }
     
 
