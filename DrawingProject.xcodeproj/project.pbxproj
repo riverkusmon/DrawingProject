@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E5308B7D218B732B00C449FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5308B7C218B732B00C449FF /* AppDelegate.swift */; };
-		E5308B7F218B732B00C449FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5308B7E218B732B00C449FF /* ViewController.swift */; };
+		E5308B7F218B732B00C449FF /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5308B7E218B732B00C449FF /* ArtViewController.swift */; };
 		E5308B82218B732B00C449FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5308B80218B732B00C449FF /* Main.storyboard */; };
 		E5308B84218B732C00C449FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5308B83218B732C00C449FF /* Assets.xcassets */; };
 		E5308B87218B732C00C449FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5308B85218B732C00C449FF /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		E5308B79218B732B00C449FF /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5308B7C218B732B00C449FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5308B7E218B732B00C449FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5308B7E218B732B00C449FF /* ArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		E5308B81218B732B00C449FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5308B83218B732C00C449FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5308B86218B732C00C449FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E5308B7C218B732B00C449FF /* AppDelegate.swift */,
-				E5308B7E218B732B00C449FF /* ViewController.swift */,
+				E5308B7E218B732B00C449FF /* ArtViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5308B7F218B732B00C449FF /* ViewController.swift in Sources */,
+				E5308B7F218B732B00C449FF /* ArtViewController.swift in Sources */,
 				E5308B7D218B732B00C449FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
