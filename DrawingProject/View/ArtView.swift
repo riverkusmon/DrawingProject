@@ -15,7 +15,8 @@ public class ArtView: UIView
     {
         //drawing code
         createStickFigure().stroke()
-        //drawTurtle()
+        drawTurtle()
+        drawMinion().stroke()
     }
     
     private func createStickFigure() -> UIBezierPath
@@ -27,7 +28,7 @@ public class ArtView: UIView
         
         figure.addArc(withCenter: CGPoint(x: 200, y: 200),
                       radius: CGFloat(20),
-                      startAngle: CGFloat(20),
+                      startAngle: CGFloat(0),
                       endAngle: CGFloat(2) * CGFloat.pi,
                       clockwise: true)
         
@@ -42,6 +43,41 @@ public class ArtView: UIView
         
         return figure
     }
+    
+    private func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint(x: 100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
+    }
+    
+    private func drawMinion() -> UIBezierPath
+    {
+        let daryll = UIBezierPath()
+        UIColor.blue.setFill()
+        daryll.lineWidth = 3.0
+        
+        
+        daryll.addArc(withCenter: CGPoint(x: 100, y: 100),
+                      radius: CGFloat(30),
+                      startAngle: CGFloat(0),
+                      endAngle: CGFloat(2) * CGFloat.pi,
+                      clockwise: true)
+        
+        daryll.move(to: CGPoint(x: 150, y: 100))
+        daryll.addLine(to: CGPoint(x: 100, y: 100 ))
+        daryll.close()
+        daryll.fill()
+        
+        return daryll
+        
+    }
+    
+
     
 
 }
