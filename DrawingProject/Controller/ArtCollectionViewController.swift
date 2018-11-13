@@ -54,8 +54,6 @@ public class ArtCollectionViewController: UICollectionViewController
     
     
     
-    
-    
     public override func viewDidLoad()
     {
         super.viewDidLoad()
